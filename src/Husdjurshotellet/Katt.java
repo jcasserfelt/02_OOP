@@ -1,18 +1,19 @@
 package Husdjurshotellet;
 
-public class Orm extends Djur {
+public class Katt extends DäggDjur {
 
-    public Orm() {
+    public Katt() {
     }
 
-    public Orm(String _namn, double _vikt) {
+    public Katt(String _namn, double _vikt) {
         this.namn = _namn;
         this.vikt = _vikt;
+        matVanor = DjurFoder.kattfoder;
     }
 
     @Override
     public double getFoodInGrams() {
-        return 20;
+        return this.vikt * 1000 / 150;
     }
 
     public String getName() {
@@ -22,4 +23,7 @@ public class Orm extends Djur {
     public double getVikt() {
         return this.vikt;
     }
+
+
+
 }

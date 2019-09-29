@@ -1,7 +1,8 @@
 package Husdjurshotellet;
 
-public class Djur {
-    String namn;
-    double vikt;
+abstract public class Djur implements ICalcFood {
+    protected String namn;
+    protected double vikt;
+    DjurFoder matVanor;
 
 }

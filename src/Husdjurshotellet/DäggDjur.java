@@ -1,6 +1,6 @@
 package Husdjurshotellet;
 
-public class DäggDjur extends Djur {
+public abstract class DäggDjur extends Djur {
 
 }
 

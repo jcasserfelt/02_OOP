@@ -1,7 +1,8 @@
 package Husdjurshotellet;
 
 public interface ICalcFood {
-    double getFoodInGrams();
+    int getFoodInGrams();
 
+    void showFoodMessage();
 
 }

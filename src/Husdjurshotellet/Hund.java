@@ -1,5 +1,7 @@
 package Husdjurshotellet;
 
+import javax.swing.*;
+
 public class Hund extends DäggDjur {
 
     public Hund() {
@@ -7,7 +9,7 @@ public class Hund extends DäggDjur {
         Djur.djurlista.add(this);
     }
 
-    public Hund(String _namn, double _vikt) {
+    public Hund(String _namn, int _vikt) {
         this.namn = _namn;
         this.vikt = _vikt;
         matVanor = DjurFoder.hundfoder;
@@ -15,8 +17,14 @@ public class Hund extends DäggDjur {
     }
 
     @Override
-    public double getFoodInGrams() {
+    public int getFoodInGrams() {
         return this.vikt * 1000 / 100;
+    }
+
+    @Override
+    public void showFoodMessage() {
+        String message = this.getName() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;
+        JOptionPane.showMessageDialog(null, message);
     }
 
     public String getName() {

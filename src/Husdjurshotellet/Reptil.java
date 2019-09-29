@@ -1,5 +1,5 @@
 package Husdjurshotellet;
 
-public class Reptil {
+abstract public class Reptil extends Djur {
 
 }

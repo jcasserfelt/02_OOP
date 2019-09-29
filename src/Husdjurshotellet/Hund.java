@@ -17,12 +17,13 @@ public class Hund extends DäggDjur {
 
     @Override
     public int getFoodInGrams() {
-        return this.getVikt() * 1000 / 100;
+        int foodCalcNumeratorHund = 100;
+        return this.getVikt() * 1000 / foodCalcNumeratorHund;
     }
 
     @Override
     public void showFoodMessage() {
-        String message = this.getNamn() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;
+        String message = this.getNamn() + " ska få sig " + this.getFoodInGrams() + "g " + this.getMatVanor();
         JOptionPane.showMessageDialog(null, message);
     }
 }

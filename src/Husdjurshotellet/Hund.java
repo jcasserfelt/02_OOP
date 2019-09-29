@@ -10,29 +10,20 @@ public class Hund extends DäggDjur {
     }
 
     public Hund(String _namn, int _vikt) {
-        this.namn = _namn;
-        this.vikt = _vikt;
+        super(_namn, _vikt);
         matVanor = DjurFoder.hundfoder;
         Djur.djurlista.add(this);
     }
 
     @Override
     public int getFoodInGrams() {
-        return this.vikt * 1000 / 100;
+        return this.getVikt() * 1000 / 100;
     }
 
     @Override
     public void showFoodMessage() {
-        String message = this.getName() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;
+        String message = this.getNamn() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;
         JOptionPane.showMessageDialog(null, message);
     }
-
-    public String getName() {
-        return this.namn;
-    }
-
-    public double getVikt() {
-        return this.vikt;
-    }
-
 }
+

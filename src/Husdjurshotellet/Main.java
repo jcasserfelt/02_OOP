@@ -14,11 +14,9 @@ public class Main {
         String input = JOptionPane.showInputDialog(null, "Vilket djur ska få mat?");
 
         for (Djur temp : Djur.djurlista) {
-            if (input.equalsIgnoreCase(temp.namn)) {
+            if (input.equalsIgnoreCase(temp.getNamn())) {
                 temp.showFoodMessage();
             }
         }
-
-
     }
 }

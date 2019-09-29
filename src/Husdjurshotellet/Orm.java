@@ -9,9 +9,8 @@ public class Orm extends Reptil {
         Djur.djurlista.add(this);
     }
 
-    public Orm(String _namn, int _vikt) {
-        this.namn = _namn;
-        this.vikt = _vikt;
+    Orm(String _namn, int _vikt) {
+        super(_namn, _vikt);
         matVanor = DjurFoder.ormpellets;
         Djur.djurlista.add(this);
     }
@@ -23,15 +22,8 @@ public class Orm extends Reptil {
 
     @Override
     public void showFoodMessage() {
-        String message = this.getName() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;
+        String message = this.getNamn() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;
         JOptionPane.showMessageDialog(null, message);
     }
 
-    public String getName() {
-        return this.namn;
-    }
-
-    public double getVikt() {
-        return this.vikt;
-    }
 }

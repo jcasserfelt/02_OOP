@@ -11,11 +11,14 @@ public class Main {
         Katt ove = new Katt("Ove", 3);
         Orm hypno = new Orm("Hypno", 1);
 
-        String input = JOptionPane.showInputDialog(null, "Vilket djur ska få mat?");
+        while (true) {
+            String input = JOptionPane.showInputDialog(null, "Vilket djur ska få mat?");
 
-        for (Djur temp : Djur.djurlista) {
-            if (input.equalsIgnoreCase(temp.getNamn())) {
-                temp.showFoodMessage();
+            for (Djur temp : Djur.djurlista) {
+                if (input.equalsIgnoreCase(temp.getNamn())) {
+                    temp.showFoodMessage();
+                }
+                if (input == null) break;
             }
         }
     }

@@ -26,6 +26,4 @@ public class Katt extends DäggDjur {
         String message = this.getNamn() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;
         JOptionPane.showMessageDialog(null, message);
     }
-
-
 }

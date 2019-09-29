@@ -25,5 +25,4 @@ public class Orm extends Reptil {
         String message = this.getNamn() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;
         JOptionPane.showMessageDialog(null, message);
     }
-
 }

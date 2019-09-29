@@ -1,5 +1,7 @@
 package Husdjurshotellet;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -9,6 +11,7 @@ public class Main {
         Katt ove = new Katt("Ove", 3);
         Orm hypno = new Orm("Hypno", 1);
 
+        String input = JOptionPane.showInputDialog(null, "Vilket djur ska få mat?");
 
     }
 }

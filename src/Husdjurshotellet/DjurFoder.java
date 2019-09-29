@@ -1,3 +1,3 @@
 package Husdjurshotellet;
 
-public enum DjurFoder {hundfoder, kattfoder, ormfoder}
+public enum DjurFoder {hundfoder, kattfoder, ormpellets}

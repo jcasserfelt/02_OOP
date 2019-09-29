@@ -3,11 +3,15 @@ package Husdjurshotellet;
 public class Hund extends DäggDjur {
 
     public Hund() {
+        matVanor = DjurFoder.hundfoder;
+        Djur.djurlista.add(this);
     }
 
     public Hund(String _namn, double _vikt) {
         this.namn = _namn;
         this.vikt = _vikt;
+        matVanor = DjurFoder.hundfoder;
+        Djur.djurlista.add(this);
     }
 
     @Override

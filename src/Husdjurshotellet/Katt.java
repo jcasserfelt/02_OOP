@@ -18,8 +18,8 @@ public class Katt extends DäggDjur {
 
     @Override
     public int getFoodInGrams() {
-        int foodCalcNumeratorHund = 150;
-        return this.getVikt() * 1000 / foodCalcNumeratorHund;
+        int foodCalcNumeratorKatt = 150;
+        return this.getVikt() * 1000 / foodCalcNumeratorKatt;
     }
 
     @Override

@@ -10,13 +10,16 @@ public class Main {
         Katt venus = new Katt("Venus", 5);
         Katt ove = new Katt("Ove", 3);
         Orm hypno = new Orm("Hypno", 1);
+        hypno.matVanor = DjurFoder.hundfoder;
+        Kamel kammo = new Kamel();
+        //System.out.println(kammo.matVanor.toString());
 
         while (true) {
             String input = JOptionPane.showInputDialog(null, "Vilket djur ska få mat?");
 
-            for (Djur temp : Djur.djurlista) {
-                if (input.equalsIgnoreCase(temp.getNamn())) {
-                    temp.showFoodMessage();
+            for (Djur djur : Djur.djurlista) {
+                if (input.equalsIgnoreCase(djur.getNamn())) {
+                    djur.showFoodMessage();
                 }
                 if (input == null) break;
             }

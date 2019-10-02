@@ -10,5 +10,14 @@ public class Main {
         for (Figur temp : Figur.figurlista) {
             System.out.println(temp.area());
         }
+        System.out.println("------------------------");
+
+        FigurFactory.getfigur("cirkel");
+        FigurFactory.getfigur("rektangel");
+        FigurFactory.getfigur("triangel");
+
+        for (Figur temp : Figur.figurlista) {
+            System.out.println(temp.area());
+        }
     }
 }

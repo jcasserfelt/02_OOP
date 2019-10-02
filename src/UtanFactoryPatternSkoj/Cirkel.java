@@ -15,7 +15,7 @@ public class Cirkel extends Figur {
         Figur.figurlista.add(this);
     }
 
-    @Override
+
     double area() {
         return radie * radie * Math.PI;
     }

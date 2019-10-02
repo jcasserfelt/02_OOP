@@ -2,15 +2,15 @@ package Husdjurshotellet;
 
 import javax.swing.*;
 
-public class Main {
+public class MainMedFactory {
     public static void main(String[] args) {
 
-        // Create five nice animals
-        Hund sixten = new Hund("Sixten", 5);
-        Hund dogge = new Hund("Dogge", 10);
-        Katt venus = new Katt("Venus", 5);
-        Katt ove = new Katt("Ove", 3);
-        Orm hypno = new Orm("Hypno", 1);
+        // Create five nice animals with factory
+        DjurFactory.skapaDjur("Hund", "Sixten", 5);
+        DjurFactory.skapaDjur("Hund", "Dogge", 10);
+        DjurFactory.skapaDjur("katt", "Venus", 5);
+        DjurFactory.skapaDjur("katt", "Ove", 3);
+        DjurFactory.skapaDjur("orm", "Hypno", 1);
 
         // Ask user for a animal name
         // Then iterate through the animal list and performe actions if input matches with a animal name

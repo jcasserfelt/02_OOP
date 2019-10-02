@@ -13,11 +13,12 @@ public class Hund extends DäggDjur {
     // Constructor with parameters
     public Hund(String _namn, int _vikt) {
         super(_namn, _vikt);
-        matVanor = DjurFoder.hundfoder;
+        matVanor = DjurFoder.hundfoder; // #Enums
         Djur.djurlista.add(this);
     }
 
     // Method from Interface ICalcFood
+    // #Polymorfism
     @Override
     public int getFoodInGrams() {
         int foodCalcNumeratorHund = 100;
@@ -25,6 +26,7 @@ public class Hund extends DäggDjur {
     }
 
     // Method from Interface ICalcFood
+    // #Polymorfism
     @Override
     public void showFoodMessage() {
         String message = this.getNamn() + " ska få sig " + this.getFoodInGrams() + "g " + this.getMatVanor();

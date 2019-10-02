@@ -6,6 +6,7 @@ public class MainMedFactory {
     public static void main(String[] args) {
 
         // Create five nice animals with factory
+        // #Inkapsling
         DjurFactory.skapaDjur("Hund", "Sixten", 5);
         DjurFactory.skapaDjur("Hund", "Dogge", 10);
         DjurFactory.skapaDjur("katt", "Venus", 5);
@@ -19,7 +20,7 @@ public class MainMedFactory {
             if (input == null) break;
             for (Djur djur : Djur.djurlista) {
                 if (input.equalsIgnoreCase(djur.getNamn())) {
-                    djur.showFoodMessage();
+                    djur.showFoodMessage(); // #Polymordism
                 }
             }
         }

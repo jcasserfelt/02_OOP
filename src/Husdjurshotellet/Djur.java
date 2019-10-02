@@ -6,7 +6,7 @@ import java.util.ArrayList;
 abstract public class Djur implements ICalcFood {
     private String namn;
     private int vikt;
-    protected DjurFoder matVanor;
+    protected DjurFoder matVanor; // #Enums
     static ArrayList<Djur> djurlista = new ArrayList<Djur>(); // used in all animal constructors to put them in this list.
 
     // Constructor
@@ -20,6 +20,7 @@ abstract public class Djur implements ICalcFood {
     }
 
     // Getters and Setters.
+    // #Inkapsling
     public String getNamn() {
         return namn;
     }

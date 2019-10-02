@@ -6,7 +6,7 @@ public class Orm extends Reptil {
 
     // Constructor
     public Orm() {
-        matVanor = DjurFoder.ormpellets;
+        matVanor = DjurFoder.ormpellets; // #Enums
         Djur.djurlista.add(this);
     }
 
@@ -18,12 +18,14 @@ public class Orm extends Reptil {
     }
 
     // Method from Interface ICalcFood
+    // #Polymorfism
     @Override
     public int getFoodInGrams() {
         return 20;
     } // Orm always get 20 grams
 
     // Method from Interface ICalcFood
+    // #Polymorfism
     @Override
     public void showFoodMessage() {
         String message = this.getNamn() + " ska få sig " + this.getFoodInGrams() + "g " + this.matVanor;

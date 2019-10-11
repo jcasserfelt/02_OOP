@@ -6,7 +6,6 @@ public class Cirkel extends Figur {
     public Cirkel() {
         super();
         Figur.figurlista.add(this);
-
     }
 
     public Cirkel(double radie, int x, int y) {

@@ -35,5 +35,4 @@ public class Ovning5a {
         System.out.printf("Hogsta: %.2f\n", hogsta);
         System.out.printf("Genomsnitt: %.2f\n", avarage);
     }
-
 }

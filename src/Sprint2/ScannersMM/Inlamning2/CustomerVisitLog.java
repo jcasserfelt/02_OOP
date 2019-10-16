@@ -1,18 +1,22 @@
 package Sprint2.ScannersMM.Inlamning2;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 
-public class CustomerVisitLogg {
+public class CustomerVisitLog {
 
-    public static void writeToLogg(Customer customer) {
+    public static void writeToLog(Customer customer) {
         Path path = Paths.get("CustomerLogg.txt");
+        if (!Files.isReadable(path)) {
+            System.out.println("Log file was created");
+        }
         try (PrintWriter file = new PrintWriter(new FileWriter(new File(path.toString()), true));) {
             file.printf("%-20s %-20s %-20s", LocalDate.now().toString(), customer.getPersonNr(), customer.getName());
             file.write('\n');
-            //file.close(); REDUNDANT PGA try-with-resources !!
+            //file.close(); REDUNDANT PGA try-with-resources !! ;)
 
         } catch (FileNotFoundException e) {
             System.out.println("Filen kunde inte hittas");
@@ -28,15 +32,4 @@ public class CustomerVisitLogg {
             System.exit(0);
         }
     }
-/*    public static void writeToLogg2(Customer customer) {
-
-        try {
-            PrintWriter file = new PrintWriter(new BufferedWriter(new FileWriter("CustomerLogg.txt", true)));
-            file.printf("%-20s %-20s %-20s", LocalDate.now().toString(), customer.getPersonNr(), customer.getName());
-            file.write('\n');
-            file.close();
-        } catch (IOException e) {
-            System.out.println("Filen kunde inte hittas");
-        }
-    }*/
 }

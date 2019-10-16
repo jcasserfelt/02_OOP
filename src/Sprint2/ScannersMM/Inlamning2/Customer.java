@@ -14,17 +14,6 @@ public class Customer {
         this.payDate = dayDate;
     }
 
-    // Goes through the customerRegister and returns first matching object.
-  /*  public static Customer findCustomer(String input) {
-        Customer customer = null;
-        for (Customer temp : Gym.customerRegister) {
-            if (input.equalsIgnoreCase(temp.getName()) || input.equalsIgnoreCase(temp.getPersonNr())) {
-                customer = temp;
-            }
-        }
-        return customer;
-    }*/
-
     // true if payDate is less than a year ago
     public boolean hasValidTrainingCard() {
         LocalDate nowIsh = LocalDate.now();

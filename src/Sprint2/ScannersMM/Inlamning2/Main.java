@@ -9,9 +9,5 @@ public class Main {
             if (input == null) break;
             Gym.customerCheckIn(input);
         }
-
-
-       /* Customer test = new Customer("2","2", LocalDate.MAX);
-        System.out.println(test.getPayDate());*/
     }
 }

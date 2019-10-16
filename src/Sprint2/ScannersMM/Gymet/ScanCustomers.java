@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class ScanCustomers {
 
     public static void readCustomers(String filePath) throws IOException {
+        CustomerRegister.register = new ArrayList<Person>();
 
         String tempLine;
         StringBuilder sb = new StringBuilder();
@@ -20,19 +21,14 @@ public class ScanCustomers {
         Path path = Paths.get(filePath);
         Scanner sc = new Scanner(path);
         //ArrayList<Person> register = new ArrayList<Person>();
-        CustomerStorage.register = new ArrayList<Person>();
         Person fakk = new Person();
 
         try (BufferedReader bufIn = Files.newBufferedReader(path)) {
             while (sc.hasNext()) {
                 tempLine = sc.next();
-                //while ((tempLine = sc.next()) != null)
-                CustomerStorage.register.add(new Person());
-                CustomerStorage.register.get(counter).personNr = tempLine.replace(",", "");
-                CustomerStorage.register.get(counter).firstName = sc.next().replace(",", "");
-                CustomerStorage.register.get(counter).lastName = sc.next().replace(",", "");
-                CustomerStorage.register.get(counter).avgifttBetald = sc.next().replace(",", "");
-                CustomerStorage.register.get(counter).membershipDate = LocalDate.parse(CustomerStorage.register.get(counter).avgifttBetald);
+                CustomerRegister.register.add(new Person());
+                CustomerRegister.register.get(counter).personNr = tempLine.replace(",", "");
+                CustomerRegister.register.get(counter).membershipDate = LocalDate.parse(sc.next().replace(",", ""));
                 counter++;
 
             }

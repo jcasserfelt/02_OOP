@@ -15,7 +15,7 @@ public class TextEditor extends JFrame implements ActionListener {
     private JButton open = new JButton("Öppna");
     private JButton save = new JButton("Spara");
     private JButton print = new JButton("Skriv ut");
-    private JButton quit = new JButton("Avsluta");
+    private JButton quit = new JButton("AvslutaA");
     private JTextArea area = new JTextArea(10, 60);
     private JScrollPane sp = new JScrollPane(area,
             JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,

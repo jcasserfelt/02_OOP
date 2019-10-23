@@ -9,6 +9,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+// demogrejer
+
 public class TextEditor extends JFrame implements ActionListener {
     private JPanel p = new JPanel();
     private JTextField namn = new JTextField();

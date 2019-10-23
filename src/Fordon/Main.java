@@ -22,12 +22,5 @@ public class Main {
 
         bil.breakDown();
         tag.breakDown();
-
-
-        //printaNu(fordon1);
-        //IPrintableByInterface
-        //i1.printMeByInterface();
-
-
     }
 }

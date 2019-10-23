@@ -1,4 +1,4 @@
-package UtanFactoryPatternSkoj;
+package Sprint2.UtanFactoryPatternSkoj;
 
 public class LiksidigTriangel extends Figur {
     int sida;

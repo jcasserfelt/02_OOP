@@ -1,4 +1,4 @@
-package UtanFactoryPatternSkoj;
+package Sprint2.UtanFactoryPatternSkoj;
 
 public class Cirkel extends Figur {
     double radie;

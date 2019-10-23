@@ -1,7 +1,7 @@
 /*
 package MedFactoryPattern;
 
-import UtanFactoryPatternSkoj.Punkt;
+import Sprint2.UtanFactoryPatternSkoj.Punkt;
 
 abstract public class Figur {
     static ArrayList<Figur> figurlista = new ArrayList<Figur>();

@@ -1,4 +1,4 @@
-package UtanFactoryPatternSkoj;
+package Sprint2.UtanFactoryPatternSkoj;
 
 import java.util.ArrayList;
 

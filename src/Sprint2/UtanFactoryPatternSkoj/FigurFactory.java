@@ -1,6 +1,4 @@
-package UtanFactoryPatternSkoj;
-
-import javax.swing.*;
+package Sprint2.UtanFactoryPatternSkoj;
 
 public class FigurFactory {
 

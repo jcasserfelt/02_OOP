@@ -1,7 +1,6 @@
-package Sprint3GUI;
+package Sprint3GUI.Swing;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

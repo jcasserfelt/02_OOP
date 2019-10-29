@@ -1,4 +1,4 @@
-package Sprint3GUI;
+package Sprint3GUI.Swing;
 
 import javax.swing.*;
 

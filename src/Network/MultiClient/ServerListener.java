@@ -1,5 +1,6 @@
 package Network.MultiClient;
 
-public class ClientHanterare {
+public class ServerListener {
+
 
 }

@@ -17,11 +17,13 @@ public class Client {
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              BufferedReader terminalIn = new BufferedReader(new InputStreamReader(System.in));
+
+
         ) {
             String input;
             String output;
 
-            input = terminalIn.readLine();
+            //input = terminalIn.readLine();
 
             // dags att snurra
             while ((input = in.readLine()) != null) {

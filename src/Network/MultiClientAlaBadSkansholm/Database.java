@@ -1,4 +1,4 @@
-package Network.MultiClient;
+package Network.MultiClientAlaBadSkansholm;
 
 //import AddressServer.*;
 

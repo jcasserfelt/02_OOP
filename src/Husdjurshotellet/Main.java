@@ -11,6 +11,7 @@ public class Main {
         Katt venus = new Katt("Venus", 5);
         Katt ove = new Katt("Ove", 3);
         Orm hypno = new Orm("Hypno", 1);
+        DäggDjur freakOfNature = new Katt("freakOfNature", 100);
 
         // Ask user for a animal name
         // Then iterate through the animal list and performe actions if input matches with a animal name

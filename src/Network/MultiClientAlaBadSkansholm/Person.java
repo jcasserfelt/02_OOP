@@ -1,4 +1,4 @@
-package Network.MultiClient;
+package Network.MultiClientAlaBadSkansholm;
 
 //import AddressServer.*;
 
@@ -19,6 +19,10 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
         this.disease = disease;
         this.hospitalEmployee = hospitalEmployee;
+    }
+
+    public Person() {
+
     }
 
     public boolean isPatient() {

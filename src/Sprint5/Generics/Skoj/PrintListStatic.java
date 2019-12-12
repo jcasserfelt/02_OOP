@@ -1,6 +1,5 @@
 package Sprint5.Generics.Skoj;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

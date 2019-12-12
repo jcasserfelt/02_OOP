@@ -29,4 +29,10 @@ public class Person {
     public String getNationality() {
         return nationality;
     }
+
+    @Override
+    public String toString() {
+        return name + age;
+
+    }
 }

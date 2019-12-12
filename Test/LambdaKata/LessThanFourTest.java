@@ -1,7 +1,7 @@
 package LambdaKata;
 
 import Sprint5.Generics.Uppg3.LambdaKata.LessThanFour;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.util.List;
 

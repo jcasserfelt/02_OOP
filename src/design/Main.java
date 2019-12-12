@@ -14,8 +14,12 @@ public class Main {
         Student student4 = new Student("student4");
         Student student5 = new Student("student5");
 
+
         //Create the program
-        Program java19program = new Program("Java19");
+        Program java19program = new Program("Java19", "sara");
+
+        //Create a Program Coordinator
+        ProgramCoordinator coordinator = new ProgramCoordinator("inteSara", java19program);
 
         //Create a few seminars
         Seminar seminar1 = new Seminar("seminar1");
@@ -90,31 +94,61 @@ public class Main {
         teacher.seminarList.add(seminar3);
         teacher.seminarList.add(seminar4);
         teacher.seminarList.add(seminar5);
-        ProgramCoordinator sara = new ProgramCoordinator();
-        sara.addTeacher(teacher);
-        sara.teacherList.get(0).seminarList.get(0).addSubject(new Subject("engelska"));
-//
-//        System.out.println("Programansvarig: " + sara);
-//        System.out.println("Programansvarigs lärare nr0: " + sara.teacherList.get(0));
-//        System.out.println("Programansvarigs lärares seminar: " + sara.teacherList.get(0).seminarList);
-//        System.out.println("Programansvarigs lärares seminars subject nr0: " + sara.teacherList.get(0).seminarList.get(0));
-//        System.out.println("Programansvarigs lärares seminar attendance nr0: " + sara.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0));
-//        System.out.println("Programansvarigs lärares seminar attendance nr0 student: " + sara.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0).getStudent());
+        coordinator.addTeacher(teacher);
+        coordinator.teacherList.get(0).seminarList.get(0).addSubject(new Subject("engelska"));
+
+        // Vilket program en Coordinator ansvarar för?
+        coordinator.getProgram();
+        //Vilka lärare som finns för ett Program?
+        java19program.getTeachers();
+        //Hur många studenter som finns i ett Program?
+        java19program.getStudents().size();
+        //Hur man lägger till en ny student till ett Program
+        // nope
+        //Vad närvaron är för Student X?
+        student1.getSeminarAttended();
+        //Vilka kurser/seminarier som en lärare undervisat i?
+        teacher.getSeminarList();
+        //Vilka ämnen som undervisats i ett Seminar?
+        seminar1.getSubjectList();
+        //Närvaron för Seminar X?
+        seminar1.getAttendanceList();
+        //Hur man skapar en ny Attendance?
+        Attendance attendance = new Attendance();
+
+
+//        System.out.println("Programansvarig: " + coordinator);
+//        System.out.println("Programansvarigs lärare nr0: " + coordinator.teacherList.get(0));
+//        System.out.println("Programansvarigs lärares seminar: " + coordinator.teacherList.get(0).seminarList);
+//        System.out.println("Programansvarigs lärares seminars subject nr0: " + coordinator.teacherList.get(0).seminarList.get(0));
+//        System.out.println("Programansvarigs lärares seminar attendance nr0: " + coordinator.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0));
+//        System.out.println("Programansvarigs lärares seminar attendance nr0 student: " + coordinator.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0).getStudent());
 //
 
-        System.out.println("Vilket program en Coordinator ansvarar för?");
-        System.out.println("Coordinator: " + sara + " ansvarig for: " + sara.getProgram());
-        System.out.println("");
-        System.out.println("Vilka studenter som finns för ett Program");
-        System.out.println("Program: " + java19program + " Studenter: " + java19program.getStudents());
-        System.out.println("");
-        System.out.println("Hur många studenter som finns i ett Program?");
-        System.out.println("Program: " + java19program + " Antal studenter: " + java19program.getStudents().size());
-        System.out.println("");
-        System.out.println("Vad närvaron är för Student X?");
-        System.out.println("Student: " + java19program.getStudents().get(0) + "narvaro: " + java19program.getStudents().get(0).getSeminarAttended().size());
-        System.out.println("");
-        System.out.println("Vilka kurser/seminarier som en lärare undervisat i");
-        System.out.println("");
+//        System.out.println("Vilket program en Coordinator ansvarar för?");
+//        System.out.println("Coordinator: " + coordinator + " ansvarig for: " + coordinator.getProgram());
+//        System.out.println("");
+//        System.out.println("Vilka studenter som finns för ett Program");
+//        System.out.println("Program: " + java19program + " Studenter: " + java19program.getStudents());
+//        System.out.println("");
+//        System.out.println("Hur många studenter som finns i ett Program?");
+//        System.out.println("Program: " + java19program + " Antal studenter: " + java19program.getStudents().size());
+//        System.out.println("");
+//        System.out.println("Vad närvaron är för Student X?");
+//        System.out.println("Student: " + java19program.getStudents().get(0) + "narvaro: " + java19program.getStudents().get(0).getSeminarAttended().size());
+//        System.out.println("");
+//        System.out.println("Vilka kurser/seminarier som en lärare undervisat i");
+//        System.out.println("");
+
+
+
+
+
+
+
+
+
+
+
     }
 }

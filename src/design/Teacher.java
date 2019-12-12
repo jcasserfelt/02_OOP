@@ -32,4 +32,7 @@ public class Teacher {
         return name;
     }
 
+    public List<Seminar> getSeminarList() {
+        return seminarList;
+    }
 }

@@ -40,4 +40,7 @@ public class Seminar {
         }
     }
 
+    public List<Subject> getSubjectList() {
+        return subjectList;
+    }
 }

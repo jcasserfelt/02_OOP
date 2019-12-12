@@ -8,6 +8,11 @@ public class ProgramCoordinator {
     Program program;
     List<Teacher> teacherList = new ArrayList<>();
 
+    public ProgramCoordinator(String name, Program program) {
+        this.name = name;
+        this.program = program;
+    }
+
     public void addTeacher(Teacher teacher) {
         this.teacherList.add(teacher);
     }

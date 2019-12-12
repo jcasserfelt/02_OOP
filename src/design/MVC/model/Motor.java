@@ -2,9 +2,9 @@ package design.MVC.model;
 
 public class Motor {
     int displacementVolyme;
-    double effect;
+    int effect;
 
-    public Motor(double effect, int displacementVolyme) {
+    public Motor(int effect, int displacementVolyme) {
         this.displacementVolyme = displacementVolyme;
         this.effect = effect;
     }
@@ -21,7 +21,13 @@ public class Motor {
         this.displacementVolyme = displacementVolyme;
     }
 
-    public void setEffect(double effect) {
+    public void setEffect(int effect) {
         this.effect = effect;
+    }
+
+    @Override
+    public String toString() {
+        return displacementVolyme + "cc" +
+                ", effect=" + effect / 1000 + "kW";
     }
 }

@@ -39,5 +39,4 @@ public class Main {
         Car fastCar = new Car(3500, smallMotor, 0, "DKV");
         return fastCar;
     }
-
 }

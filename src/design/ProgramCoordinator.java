@@ -25,4 +25,15 @@ public class ProgramCoordinator {
         return foundTeacher;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Program getProgram() {
+        return program;
+    }
+
+    public List<Teacher> getTeacherList() {
+        return teacherList;
+    }
 }

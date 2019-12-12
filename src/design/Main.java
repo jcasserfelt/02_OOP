@@ -93,15 +93,28 @@ public class Main {
         ProgramCoordinator sara = new ProgramCoordinator();
         sara.addTeacher(teacher);
         sara.teacherList.get(0).seminarList.get(0).addSubject(new Subject("engelska"));
+//
+//        System.out.println("Programansvarig: " + sara);
+//        System.out.println("Programansvarigs lärare nr0: " + sara.teacherList.get(0));
+//        System.out.println("Programansvarigs lärares seminar: " + sara.teacherList.get(0).seminarList);
+//        System.out.println("Programansvarigs lärares seminars subject nr0: " + sara.teacherList.get(0).seminarList.get(0));
+//        System.out.println("Programansvarigs lärares seminar attendance nr0: " + sara.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0));
+//        System.out.println("Programansvarigs lärares seminar attendance nr0 student: " + sara.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0).getStudent());
+//
 
-        System.out.println("Programansvarig: " + sara);
-        System.out.println("Programansvarigs lärare nr0: " + sara.teacherList.get(0));
-        System.out.println("Programansvarigs lärares seminar: " + sara.teacherList.get(0).seminarList);
-        System.out.println("Programansvarigs lärares seminars subject nr0: " + sara.teacherList.get(0).seminarList.get(0));
-        System.out.println("Programansvarigs lärares seminar attendance nr0: " + sara.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0));
-        System.out.println("Programansvarigs lärares seminar attendance nr0 student: " + sara.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0).getStudent());
-
-
-
+        System.out.println("Vilket program en Coordinator ansvarar för?");
+        System.out.println("Coordinator: " + sara + " ansvarig for: " + sara.getProgram());
+        System.out.println("");
+        System.out.println("Vilka studenter som finns för ett Program");
+        System.out.println("Program: " + java19program + " Studenter: " + java19program.getStudents());
+        System.out.println("");
+        System.out.println("Hur många studenter som finns i ett Program?");
+        System.out.println("Program: " + java19program + " Antal studenter: " + java19program.getStudents().size());
+        System.out.println("");
+        System.out.println("Vad närvaron är för Student X?");
+        System.out.println("Student: " + java19program.getStudents().get(0) + "narvaro: " + java19program.getStudents().get(0).getSeminarAttended().size());
+        System.out.println("");
+        System.out.println("Vilka kurser/seminarier som en lärare undervisat i");
+        System.out.println("");
     }
 }

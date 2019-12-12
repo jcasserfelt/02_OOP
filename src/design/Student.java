@@ -19,4 +19,6 @@ public class Student {
     public void attendSeminar(Attendance attendance) {
         this.attendanceList.add(attendance);
     }
+
+
 }

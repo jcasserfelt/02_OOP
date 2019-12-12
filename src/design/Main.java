@@ -3,6 +3,7 @@ package design;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Main {
     public static void main(String[] args) throws Exception {
 
@@ -81,8 +82,26 @@ public class Main {
         for (Attendance a : seminar5attendance) {
             seminar5.addAttendance(a);
         }
+        System.out.println("Print av java19 studenLista :" + java19program.getStudents());
+        System.out.println("");
+        Teacher teacher = new Teacher("Sigrun");
+        teacher.seminarList.add(seminar1);
+        teacher.seminarList.add(seminar2);
+        teacher.seminarList.add(seminar3);
+        teacher.seminarList.add(seminar4);
+        teacher.seminarList.add(seminar5);
+        ProgramCoordinator sara = new ProgramCoordinator();
+        sara.addTeacher(teacher);
+        sara.teacherList.get(0).seminarList.get(0).addSubject(new Subject("engelska"));
 
-        System.out.println(java19program.getStudents());
+        System.out.println("Programansvarig: " + sara);
+        System.out.println("Programansvarigs lärare nr0: " + sara.teacherList.get(0));
+        System.out.println("Programansvarigs lärares seminar: " + sara.teacherList.get(0).seminarList);
+        System.out.println("Programansvarigs lärares seminars subject nr0: " + sara.teacherList.get(0).seminarList.get(0));
+        System.out.println("Programansvarigs lärares seminar attendance nr0: " + sara.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0));
+        System.out.println("Programansvarigs lärares seminar attendance nr0 student: " + sara.teacherList.get(0).seminarList.get(0).getAttendanceList().get(0).getStudent());
+
+
 
     }
 }

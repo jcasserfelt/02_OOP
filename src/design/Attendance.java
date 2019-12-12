@@ -31,4 +31,6 @@ public class Attendance {
     public boolean isAttendanceLevel() {
         return attendanceLevel;
     }
+
+
 }
